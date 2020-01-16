@@ -33,18 +33,23 @@ int main()
 ### (关于git的基础操作)  
  
 有工作区、暂存区(索引)、本地版本库  
-  
-git init   初始化一个空的git仓库。会创建一个.git文件，千万不能动它！ 
-git status   查看状态 显示各个区域的文件状态(比如工作区的代码是否add进暂存区) 
-git add <文件名>   将工作中的此文件放入暂存区 
-git commit -m "一段牛逼的代码"   将add进暂存区的文件提交到版本库。要求注释。  
  
-要提交了但还不知道你是谁呢，那么设置一下  
+```
+git init   //初始化一个空的git仓库。会创建一个.git文件，千万不能动它！ 
+git status   //查看状态 显示各个区域的文件状态(比如工作区的代码是否add进暂存区) 
+git add <文件名>   //将工作中的此文件放入暂存区 
+git commit -m "一段牛逼的代码"   //将add进暂存区的文件提交到版本库。要求注释。  
+``` 
+要提交了但还不知道你是谁呢，那么设置一下 
+```
 git config --global user.name "..."  
 git config --global user.email "..."  
- 
-还能查看我们的commit history  
-git log   按q可以退出此界面  
+```
+
+还能查看我们的commit history
+```
+git log   //按q可以退出此界面  
+```
 
 ### 关于cat命令  
 cat <文件名>   cat(concatenate and print files).可以查看一个文件中的内容。  
