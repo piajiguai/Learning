@@ -27,7 +27,8 @@ int main()
 
 *号处输出不可用val  
 因为之前结束输入的结束符是ctrl+z,结束符的值为0,所以此时val存储的是0。要用currval，这样输入结束符给val是对currval没什么影响。 
-
+ 
+ 
 ## 2  
 ### (关于git的基础操作)  
  
@@ -67,10 +68,10 @@ git reset HEAD <文件名>
 git checkout -- <文件名> 
 
 ### 总结  
-工作区            暂存区          本地版本库 
-         ➡add           ➡commit 
-       checkout⬅         reset⬅ 
-要是忘了随时 git status ！ 
+工作区            暂存区          本地版本库  
+         ➡add           ➡commit  
+       checkout⬅         reset⬅  
+要是忘了随时 git status ！  
  
 
 
