@@ -78,6 +78,33 @@ git checkout -- <文件名>
        checkout⬅         reset⬅  
 ```
 要是忘了随时 git status ！  
+
+
+## 3 
+#### “可以用 单个形参来调用 的构造函数定义了从 形参类型 到 该类类型 的一个隐式转换。”  
+```cpp
+class BOOK  //定义了一个书类
+{
+    private:
+        string _bookISBN ;  //书的ISBN号
+        float _price ;    //书的价格
+
+    public:
+        //类的构造函数，即那个“能够用一个参数进行调用的构造函数”（虽然它有两个形参，但其中一个有默认实参，只用一个参数也能进行调用）
+        BOOK(string ISBN,float price=0.0f):_bookISBN(ISBN),_price(price){}
+};
+```
+```cpp
+    cout<<A.isSameISBN(string("A-A-A"))<<endl; //此处即发生一个隐式转换：string类型-->BOOK类型，借助BOOK的构造函数进行转换，以满足isSameISBN函数的参数期待。
+    cout<<A.isSameISBN(BOOK("A-A-A"))<<endl;    //显式创建临时对象，也即是编译器干的事情。
+```
+#### 我们可以通过explicit声明来抑制这种转换:  
+```cpp
+    explicit BOOK(string ISBN,float price=0.0f):_bookISBN(ISBN),_price(price){}
+```
+####  现在用户只能进行显示类型转换，显式地创建临时对象。  
+
+
  
 
 
