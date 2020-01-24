@@ -29,6 +29,8 @@ int main()
 因为之前结束输入的结束符是ctrl+z,结束符的值为0,所以此时val存储的是0。要用currval，这样输入结束符给val是对currval没什么影响。 
  
  
+   
+   
 ## 2 (关于git的基础操作)  
  
 有工作区、暂存区(索引)、本地版本库  
@@ -80,6 +82,9 @@ git checkout -- <文件名>
 要是忘了随时 git status ！  
 
 
+ 
+  
+  
 ## 3 
 #### “可以用 单个形参来调用 的构造函数定义了从 形参类型 到 该类类型 的一个隐式转换。”  
 ```cpp
@@ -102,7 +107,7 @@ class BOOK  //定义了一个书类
 ```cpp
     explicit BOOK(string ISBN,float price=0.0f):_bookISBN(ISBN),_price(price){}
 ```
-####  现在用户只能进行显示类型转换，显式地创建临时对象。  
+####  现在用户只能进行显式类型转换，显式地创建临时对象。  
 
 
  
